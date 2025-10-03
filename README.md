@@ -1,4 +1,5 @@
 # Email Resend Plugin
+![Email Resend Plugin](email-resend.jpg)
 
 The **Email Resend Plugin** is an extension for [Grav CMS](https://github.com/getgrav/grav) that allows sending emails via the Resend API.
 
