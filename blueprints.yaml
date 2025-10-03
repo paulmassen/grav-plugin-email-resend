@@ -1,0 +1,48 @@
+name: Email Resend
+slug: email-resend
+type: plugin
+version: 1.0.0
+description: Resend integration for new Email plugin
+icon: envelope
+author:
+  name: Paul Massendari
+  email: paulmassendari@pm.me
+homepage: https://github.com/paulmassen/grav-plugin-email-resend
+keywords: grav, plugin, etc
+bugs: https://github.com/paulmassen/grav-plugin-email-resend/issues
+docs: https://github.com/paulmassen/grav-plugin-email-resend/blob/develop/README.md
+license: MIT
+
+dependencies:
+  - { name: grav, version: '>=1.7.0' }
+  - { name: email, version: '>=4.0.0' }
+
+form:
+  validation: loose
+  fields:
+    info:
+      type: section
+      title: How to use
+      text: |
+        1. Go to [Resend](https://resend.com) and create an account.
+        2. Add your API key here in the configuration.
+        3. Chose "Resend" as the engine in the Email plugin configuration.
+        Note that you can use onboarding@resend.dev as From address for testing. Using your own domain will require you to verify it with Resend.
+
+    enabled:
+      type: toggle
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+
+    api_key:
+      type: text
+      label: API Key
+      validate:
+        required: true
+
