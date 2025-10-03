@@ -133,4 +133,5 @@ class EmailResendPlugin extends Plugin
         
         return $result;
     }
+    
 }
