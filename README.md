@@ -2,6 +2,7 @@
 <div align="center">
 <img src="email-resend.jpg" alt="Email Resend Plugin" width="250" height="250">
 </div>
+
 The **Email Resend Plugin** is an extension for [Grav CMS](https://github.com/getgrav/grav) that allows sending emails via the Resend API.
 
 ## Installation
@@ -20,7 +21,9 @@ If you use the Admin Plugin, you can install the plugin directly by browsing the
 
 ### 1. Email Resend Plugin Configuration
 
-Copy the `user/plugins/email-resend/email-resend.yaml` file to `user/config/plugins/email-resend.yaml` and only edit that copy.
+If you use the Admin Plugin, simply browse the plugin configuration page.
+
+If you don't use the Admin plugin, copy the `user/plugins/email-resend/email-resend.yaml` file to `user/config/plugins/email-resend.yaml` and only edit that copy.
 
 **Default configuration:**
 
